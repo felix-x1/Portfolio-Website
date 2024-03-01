@@ -1,0 +1,171 @@
+:root{
+  --text: #ffffff;
+  --background: #2c2626;
+  --primary: #03cafc;
+  --primaryOpacity:  hsla(192, 98%, 50%, 0.49);
+  --secondary: #a518d8;
+  --accent: #00ffbb;
+}
+.background{
+  background-color: var(--background);
+}
+body{
+  margin: 0;
+  margin-top: 0px;
+}
+html{
+  overflow-x: hidden;
+}
+.infoBubble{
+  display: inline-block;
+  background-color: var(--text);
+  color: var(--background);
+  font-family: "Kode Mono", monospace;
+  text-align: left;
+  width: clamp(12.5rem, -1.136rem + 68.18vw, 50rem); /*200-800px */
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 20px;
+  margin-left: clamp(3.75rem, 2.841rem + 4.55vw, 6.25rem); /*60-100px */
+  height: 700px;
+  border-radius: 8px;
+  border: 3px solid black ;
+  box-shadow: 10px 10px 0px var(--background);
+}
+.felixTheCatIcon{
+  width: clamp(3.125rem, 0.852rem + 11.36vw, 9.375rem);/*50-150px */
+}
+.bubbleTitle{
+  font-weight: 800;
+  font-size: clamp(0.938rem, 0.369rem + 2.84vw, 2.5rem); /*15-40px */
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.bubbleText{
+  font-size: clamp(0.625rem, 0.17rem + 2.27vw, 1.875rem); /*10-30px*/
+  font-weight: 600;
+  line-height: 1.5em;
+}
+.bubbleContainer{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.imageBubbleContainer{
+  display: inline-block;
+  width: 100%;
+  margin-left: clamp(3.125rem, -100rem + 150vw, 12.5rem);/*25-300px*/
+  position: relative;
+}
+
+.imageBubbleTower{
+  border-radius: 40px;
+  border: 4px solid var(--background);
+  width: clamp(6.25rem, -6.25rem + 33.33vw, 18.75rem); /*100-300px*/
+  position: absolute;
+  box-shadow: 2px 2px 10px var(--background);
+}
+.imageBubbleRook{
+  border-radius: 30px;
+  border: 4px solid var(--background);
+  width: clamp(6.25rem, -6.25rem + 33.33vw, 18.75rem); /*100-300px*/
+  position: absolute;
+  top: -80px;
+  left: clamp(6.25rem, -2.5rem + 23.33vw, 15rem); /*100-240px*/
+  box-shadow: 2px 2px 10px var(--background);
+}
+.imageBubbleKing{
+  border-radius: 20px;
+  border: 4px solid var(--background);
+  width: clamp(6.25rem, -6.25rem + 33.33vw, 18.75rem); /*100-300px*/
+  position: absolute;
+  top: 80px;
+  left: clamp(6.25rem, -18.75rem + 66.67vw, 31.25rem); /*100-500px*/
+  box-shadow: 2px 2px 10px var(--background);
+}
+
+.imageBubbleContainer2{
+  display: inline-block;
+  width: 100%;
+  margin-left: clamp(1.563rem, -3.125rem + 12.5vw, 6.25rem);/*25-100px*/
+  position: relative;
+}
+.imageBubbleCat1{
+  border-radius: 40px;
+  border: 4px solid black;
+  width: clamp(6.25rem, -6.25rem + 33.33vw, 18.75rem); /*100-300px*/
+  position: absolute;
+  box-shadow: 2px 2px 10px black;
+}
+.imageBubbleMe{
+  border-radius: 30px;
+  border: 4px solid black;
+  width: clamp(6.25rem, -6.25rem + 33.33vw, 18.75rem); /*100-300px*/
+  position: absolute;
+  top: 200px;
+  left: clamp(3.125rem, -6.25rem + 25vw, 12.5rem); /*50-200px*/;
+  box-shadow: 2px 2px 10px black;
+}
+.imageBubbleCat2{
+  border-radius: 20px;
+  border: 4px solid black;
+  width: clamp(6.25rem, -6.25rem + 33.33vw, 18.75rem); /*100-300px*/
+  position: absolute;
+  top: -40px;
+  left:clamp(9.375rem, -9.375rem + 50vw, 28.125rem);
+  box-shadow: 2px 2px 10px black;
+}
+
+.logoContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 100px;
+}
+.imageBubbleIcon{
+  width: 75px;
+}
+.personalBubble{
+  display: inline-block;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Kode Mono", monospace;
+  text-align: left;
+  height: 200px;
+  width: clamp(12.5rem, -1.136rem + 68.18vw, 50rem); /*200-800px */
+  padding-top: 25px;
+  padding-left: 0px;
+  padding-right: 175px;
+  height: 700px;
+}
+.contactContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-bottom: 100px;
+  
+}
+.contactTitle{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: var(--text);
+  font-family: "Kode Mono", monospace;
+  font-weight: 800;
+  font-size: 60px;
+
+}
+.githubButton,.instagramButton{
+  width: 100px;
+  height: 100px;
+  background-color: var(--text);
+  border: none;
+  border-radius: 10px;
+  transition: opacity .25s, border-radius .25s;
+}
+.githubButton:hover,.instagramButton:hover{
+  opacity: .5;
+  border-radius: 20px;
+}
